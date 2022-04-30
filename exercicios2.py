@@ -13,6 +13,7 @@ else:
     print("Os números são exatamente iguais !")
 
 #2 - Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+
 n1 = float(input("Digite um número, vamos descobrir se ele é positivo ou negativo \n"))
 
 if n1 > 0:
@@ -23,6 +24,7 @@ else:
     print("Você digitou o número 0")
 
 #3 - Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+
 sexo = input("Olá ! Qual o seu sexo ? (F - Feminino ou M - Masculino): \n")
 
 sexo = sexo.upper()
@@ -41,6 +43,7 @@ else:
 
 
 #4 - Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+
 vogal = ['a', 'e', 'i', 'o', 'u']
 
 l = input("Digite uma letra: \n")
@@ -69,6 +72,7 @@ else:
     print(f"Aluno reprovado com média {media} !")
 
 #6 - Faça um Programa que leia três números e mostre o maior e o menor deles.
+
 n1 = float(input("Digite o primeiro número: \n"))
 n2 = float(input("Digite o segundo número: \n"))
 n3 = float(input("Digite o terceiro número: \n"))
@@ -88,6 +92,7 @@ elif n3 < n2 and n3 < n1:
     print(f"{maior} é o maior número !")
 
 #7 - Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+
 preco_1 = float(input("Infome o preço do primeiro produto: \n"))
 preco_2 = float(input("Infome o preço do segundo produto: \n"))
 preco_3 = float(input("Infome o preço do terceiro produto: \n"))
@@ -101,6 +106,7 @@ print("O produto de menor valor custa R$ {:.2f}".format(menor))
 print("Portanto você deveria comprar o de menor valor")
 
 #8 -  Faça um Programa que leia três números e mostre-os em ordem decrescente.
+
 n1 = float(input("Digite o primeiro número: \n"))
 n2 = float(input("Digite o segundo número:  \n"))
 n3 = float(input("Digite o terceiro número: \n"))
@@ -147,9 +153,6 @@ else:
 # o percentual de aumento aplicado;
 # o valor do aumento;
 # o novo salário, após o aumento.
-
-from re import A
-
 
 salario = float (input("Informe o salário atual: \n"))
 if salario <= 280.00:
@@ -206,8 +209,6 @@ elif salarioBruto > 2500.00:
 print(f"O valor do seu salário bruto é R${salarioBruto:.2f}, e com os descontos correspontes ao valor do salário bruto: de FGTS no valor de R${fgts:.2F}, correspondente a 11%; desconto do sindicato, correspondente a 3% no valor de R${descSind:.2f}; e desconto do imposto de renda de ({percentIR}%) no valor de R${impostoRenda:.2f}.")
 print(f"O seu salário líquido será, portanto, R${salarioLiquido:.2f}")
 
-
-
 # 12 - Faça um Programa que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor #deve aparecer valor inválido.
 
 diaDaSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
@@ -231,8 +232,6 @@ elif dia == 7:
     print(f"Hoje é {diaDaSemana[6]}")
 else:
     print('Dia da semana inválido!')
-
-
 
 # 13 - Faça um programa que lê as duas notas parciais obtidas por um aluno numa disciplina ao longo de um semestre, e calcule a sua média.
 # A atribuição de conceitos obedece à tabela abaixo: Média de Aproveitamento Conceito Entre 9.0 e 10.0 A Entre 7.5 e 9.0 B Entre 6.0 e 7.#5 C Entre 4.0 e 6.0 D Entre 4.0 e zero
@@ -269,8 +268,8 @@ if media <= 10.0 and media >= 0:
 else:
     print("Error")
 
-# 14 - Faça um Programa que peça os três lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, #caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
-
+# 14 - Faça um Programa que peça os três lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. 
+#Indique, #caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
 
 l1 = int(input("Informe o primeiro lado \n"))
 l2 = int(input("Informe o segundo lado \n"))
@@ -284,7 +283,6 @@ elif l1 > (l2 + l3) or l2 > (l1 + l3) or l3 > (l1 + l2):
    print("Não pode ser um triangulo")
 else:
    print("Triângulo Escaleno")
-
 
 # 15 - Faça um programa que calcule as raízes de uma equação do segundo grau, na forma ax2 + bx + c
 
